@@ -7,7 +7,7 @@ anything = 12;
 // noUnusedParameters -> in tsconfig.json
 function controlMe(isTrue: boolean, somethingElse: boolean) {
   let result: number;
-  if (ifTrue) {
+  if (isTrue) {
     result = 12;
   }
   result = 33;
