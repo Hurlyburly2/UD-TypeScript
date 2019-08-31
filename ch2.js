@@ -3,10 +3,12 @@ var nameTwo = "Max";
 var ageTwo = 27;
 var anything;
 anything = 12;
-function controlMe(isTrue) {
+// noUnusedParameters -> in tsconfig.json
+function controlMe(isTrue, somethingElse) {
     var result;
-    if (ifTrue) {
+    if (isTrue) {
         result = 12;
     }
+    result = 33;
     return result;
 }
