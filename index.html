@@ -5,6 +5,20 @@
     <title>TypeScript</title>
   </head>
   <body>
-    <script src="./challenges/3_challenge.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+      // set our baseURL reference path
+      SystemJS.config({
+        baseURL: '/',
+        packages: {
+          '/': {
+            defaultExtension: 'js'
+          }
+        }
+      });
+
+      //loads /js/main.js
+      SystemJS.import('ch5-namespaces.js');
+    </script>
   </body>
 </html>
